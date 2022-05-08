@@ -13,7 +13,7 @@ describe('Submit feedback', () => {
         await expect(submitFeedback.execute({
             type: 'bug',
             comment: 'sample',
-            screenshot: 'data:image/pgn;base64'
+            screenshot: 'data:image/png;base64'
         })).resolves.not.toThrow();
 
         expect(createFeedbackSpy).toHaveBeenCalled();
